@@ -22,3 +22,6 @@ Este projeto utiliza agentes baseados em IA para realizar consultas SQL em um ba
 - **Opção 1: Instalação Local**: Instale o SQL Server diretamente em sua máquina seguindo as instruções da Microsoft.
 - **Opção 2: Docker**: Para utilizar o Docker, execute os seguintes comandos:
 
+```bash
+  docker pull mcr.microsoft.com/mssql/server:2019-latest
+  docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Azsxdc@2024!' -p 1433:1433 --name sql_server_container -d mcr.microsoft.com/mssql/server:2019-latest
